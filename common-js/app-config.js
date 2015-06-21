@@ -1,0 +1,11 @@
+var appConfig = {
+
+    sections: [
+        {
+
+        }
+    ],
+
+    core: ''
+
+};
