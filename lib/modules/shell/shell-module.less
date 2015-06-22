@@ -3,3 +3,151 @@
 :host {
 
 }
+
+.color_0 {
+  background-color: @colorTag1;
+}
+.color_1 {
+  background-color: @colorTag2;
+}
+.color_2 {
+  background-color: @colorTag3;
+}
+.color_3 {
+  background-color: @colorTag4;
+}
+.color_4 {
+  background-color: @colorTag5;
+}
+
+.color_0_shift {
+  background-color: darken(@colorTag1, 10%);
+}
+.color_1_shift {
+  background-color: darken(@colorTag2, 10%);
+}
+.color_2_shift {
+  background-color: darken(@colorTag3, 10%);
+}
+.color_3_shift {
+  background-color: darken(@colorTag4, 10%);
+}
+.color_4_shift {
+  background-color: darken(@colorTag5, 10%);
+}
+
+.section_viewport {
+  padding-left: 32vw;
+  min-height: 100vh;
+  color: @brightest;
+  transition: @transitionMid;
+}
+.left_space {
+  position: fixed;
+  height: 100vh;
+  width: 280px;
+  top: 0;
+  left: @step * 6;
+  //background-color: @plane1;
+  color: @brightest;
+  box-shadow: 2px 0 @step @shadeMin;
+  transition: @transitionMid;
+}
+.logo_pan {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: @step * 6;
+  background-color: @darkest;
+  color: @brightest;
+  top: 0;
+  left: 0;
+  font-size: @step * 2;
+  line-height: @step * 4;
+  text-decoration: none;
+  transition: @transitionMin;
+}
+.logo_pan:hover {
+  font-size: @step * 2.5;
+}
+.logo {
+  height: @step * 6;
+  width: @step * 6;
+  box-sizing: border-box;
+  padding: 14px;
+}
+.big_arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  right: -20px;
+  top: 50%;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 0 @step @shadeMin;
+  transition: @transitionMid;
+}
+.icon_holder {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: @brightest;
+  font-size: 20px;
+}
+.shadow_kill {
+  position: absolute;
+  height: 100vh;
+  width: 80px;
+  top: 0;
+  right: 0;
+  transition: @transitionMid;
+}
+.scroller_field {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  padding: @step;
+}
+.scroller {
+  height: 300vh;
+}
+.grid_row {
+  margin-top: 10px;
+  height: 100px;
+  background-color: @shineMin;
+}
+.menu_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: @brightest;
+  transform: translate(-50%, -50%);
+}
+.menu_item {
+  .active;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: @step * 6;
+  color: @brightest;
+  text-decoration: none;
+  //border: 1px solid #ccc;
+  font-size: 3vh;
+  box-sizing: border-box;
+}
+.menu_item:hover {
+
+}
+.icon {
+  text-align: center;
+  width: @step * 6;
+}

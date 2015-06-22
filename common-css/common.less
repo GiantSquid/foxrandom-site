@@ -1,1 +1,55 @@
-@test: #fff;
+// Colors:
+
+@plane1: #adabab;
+@brightest: #FFF;
+@darkest: #000;
+
+@colorTag1: #4d4dcc;
+@colorTag2: #2fb749;
+@colorTag3: #c2a049;
+@colorTag4: #cc4c46;
+@colorTag5: #b044cc;
+
+@shadeMin: rgba(0, 0, 0, 0.1);
+@shadeMid: rgba(0, 0, 0, 0.4);
+@shadeMax: rgba(0, 0, 0, 0.6);
+
+@shineMin: rgba(256, 256, 256, 0.1);
+@shineMid: rgba(256, 256, 256, 0.4);
+@shineMax: rgba(256, 256, 256, 0.8);
+
+// Sizes:
+
+@step: 10px;
+
+// Animations:
+
+@transitionMin: 0.2s;
+@transitionMid: 0.4s;
+@transitionMax: 0.8s;
+
+// Common:
+
+html,body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  background-color: #F2F5F6;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// UI:
+
+.active {
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: @transitionMin;
+}

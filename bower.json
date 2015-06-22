@@ -1,0 +1,26 @@
+{
+  "name": "foxrandom-site",
+  "version": "0.1",
+  "homepage": "https://github.com/GiantSquid/foxrandom-site",
+  "authors": [
+    "Sergey Matiyasevich <foxrandom.com@gmail.com>"
+  ],
+  "description": "SPA Template Plymer 1.0",
+  "main": "index.html",
+  "keywords": [
+    "polymer",
+    "foxlab"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.0"
+  }
+}
