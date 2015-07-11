@@ -21,23 +21,23 @@
 }
 
 .color_0_shift {
-  background-color: darken(@colorTag1, 10%);
+  background-color: darken(@colorTag1, 8%);
 }
 .color_1_shift {
-  background-color: darken(@colorTag2, 10%);
+  background-color: darken(@colorTag2, 8%);
 }
 .color_2_shift {
-  background-color: darken(@colorTag3, 10%);
+  background-color: darken(@colorTag3, 8%);
 }
 .color_3_shift {
-  background-color: darken(@colorTag4, 10%);
+  background-color: darken(@colorTag4, 8%);
 }
 .color_4_shift {
-  background-color: darken(@colorTag5, 10%);
+  background-color: darken(@colorTag5, 8%);
 }
 
 .section_viewport {
-  padding-left: 32vw;
+  padding-left: 340px;
   min-height: 100vh;
   color: @brightest;
   transition: @transitionMid;
@@ -88,19 +88,8 @@
   right: -20px;
   top: 50%;
   z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 2px 0 @step @shadeMin;
   transition: @transitionMid;
-}
-.icon_holder {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: @brightest;
-  font-size: 20px;
 }
 .shadow_kill {
   position: absolute;
@@ -128,21 +117,23 @@
 .menu_container {
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 40px;
   color: @brightest;
-  transform: translate(-50%, -50%);
+  margin-top: @step * -3.6;
+  transform: translate(0, 0);
+  transition: @transitionMid;
 }
 .menu_item {
   .active;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: @step * 6;
   color: @brightest;
   text-decoration: none;
-  //border: 1px solid #ccc;
-  font-size: 3vh;
+  font-size: 2.4vh;
   box-sizing: border-box;
+  transition: @transitionMid;
 }
 .menu_item:hover {
 
